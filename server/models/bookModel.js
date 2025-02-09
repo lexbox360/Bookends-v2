@@ -44,6 +44,9 @@ const bookSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    genreTags: [
+        { genre: { type: String, required: true } }
+    ],
     reviews: [reviewSchema],
     rating: {
         type: Number,
